@@ -1,0 +1,85 @@
+<!doctype html>
+<html class=no-js>
+<head>
+	<meta charset=utf-8>
+	<title></title>
+	<meta name=description>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+	<link rel=manifest href=site.webmanifest>
+	<link rel=apple-touch-icon href=icon.png>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel=stylesheet>
+	<link rel=stylesheet href=https://use.fontawesome.com/releases/v5.7.1/css/all.css integrity=sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr crossorigin=anonymous>
+	<link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css integrity=sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T crossorigin=anonymous>
+	<link rel=stylesheet href=css/main.css>
+	<script type=text/javascript src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js></script>
+	<script src=https://code.jquery.com/ui/1.7.3/jquery-ui.min.js integrity="sha256-pYKd3m/N09PCc1/MM/f1Nk4PnaHrShF5ehtyZ0kdDds=" crossorigin=anonymous></script>
+	<script src=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js integrity=sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM crossorigin=anonymous></script>
+	<meta name=theme-color content=#fafafa>
+</head>
+<body>
+<div class="container-fluid no_padding">
+	<div id=main_banner>
+		<div class=headers_container><h1 class="center main_color_text bold">KÓŁKO I KRZYŻYK</h1></div>
+		<div class=icon_container><i class="fas fa-angle-down"></i></div>
+	</div>
+	<div id=main_gallery class=row>
+		<div id=popup>
+			<div class=layer></div>
+			<div class=box_info><p></p><i class="fas fa-times icon"></i></div>
+		</div>
+		<div class="input_container  col-lg-12 col-md-12">
+			<div>
+				<label for="player1">Gracz 1: </label>
+				<input type="text" id="player1">
+			</div>
+			<div>
+				<label for="player2">Gracz 2: </label>
+				<input type="text" id="player2">
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 user_container active" data-user=first>
+			<div class=icon_container2><i class="fas fa-user user"></i><br>
+				<p></p></div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 squer_container">
+			<div id=one class=squer onclick data-value></div>
+			<div id=two class=squer onclick data-value></div>
+			<div id=three class=squer onclick data-value></div>
+			<div id=four class=squer onclick data-value></div>
+			<div id=five class=squer onclick data-value></div>
+			<div id=six class=squer onclick data-value></div>
+			<div id=seven class=squer onclick data-value></div>
+			<div id=eight class=squer onclick data-value></div>
+			<div id=nine class=squer onclick data-value></div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 user_container" data-user=second>
+			<div class=icon_container2><i class="fas fa-user user"></i> <br>
+				<p></p></div>
+		</div>
+	</div>
+	<div class=clearfix></div>
+	<div id=point_table>
+		<div class="one_row first_player col-xs-12">
+			<div class=name></div>
+			<div class=point></div>
+			<div class=time_description>Twój czas: <span class="time"></span>s</div>
+		</div>
+		<div class="one_row second_player col-xs-12">
+			<div class=name></div>
+			<div class=point></div>
+			<div class="time_description">Twój czas: <span class="time"></span>s</div>
+		</div>
+	</div>
+	<div id=footer class=row>
+		<div class=icon_container><i class="fas fa-angle-up"></i></div>
+		<div class="headers_container center col-sm-12">
+			<h2 class="center main_color_text bold col-sm-12">Zapraszam do kontaktu</h2>
+			<h3 class="center grey_color_text col-sm-12">Katarzyna Moskała</h3>
+			<h3 class="center grey_color_text col-sm-12">Front-end developer</h3>
+			<a href="https://kmoskala.github.io/" class=grey_color_text>PORTFOLIO</a></div>
+	</div>
+</div>
+<script type=text/javascript src=js.min/main.js></script>
+</body>
+</html>

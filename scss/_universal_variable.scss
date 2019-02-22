@@ -1,0 +1,25 @@
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+$main_color : #eb0165;
+$pink: #f4517c;
+$light_pink: #fb7995;
+$lighter_pink: #ff9dae;
+$white: #fff;
+$grey: #767676;
+$black: #000;
+
+$h1_size: em(200);
+$h2_size: em(80);
+$h3_size: em(40);
+$h4_size: em(32);
+$small_text_size: em(8);
+$litle_text_size:em(12);
+
+$lg: 1200px;
+$md: 992px;
+$sm: 768px;
+$xs: 576px;

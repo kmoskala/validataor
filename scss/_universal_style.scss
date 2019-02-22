@@ -1,0 +1,91 @@
+@import "_universal_variable";
+body {
+  font-size: 12px;
+  font-family: 'Amatic SC', cursive;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: $h1_size;
+  @media only screen and (max-width: $sm) {
+    font-size: $h2_size;
+  }
+}
+h2 {
+  font-size: $h2_size;
+  @media only screen and (max-width: $sm) {
+    font-size: $h3_size;
+  }
+}
+h3{
+  font-size: $h3_size;
+  @media only screen and (max-width: $sm) {
+    font-size: $h4_size;
+  }
+}
+
+img{
+  max-width: 100%;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+
+.no_padding {
+  padding: 0;
+}
+.no_margin {
+  margin: 0px;
+}
+
+.main_color_text {
+  color: $main_color;
+}
+.pink_color_text {
+  color: $pink;
+}
+.glight_pink_color_text {
+  color: $light_pink;
+}
+.lighter_pink_color_text {
+  color: $lighter_pink;
+}
+.white_color_text {
+  color: $white;
+}
+.grey_color_text {
+  color: $grey;
+}
+.black_color_text {
+  color: $black;
+}
+.main_color_background {
+  background-color: $main_color;
+}
+.pink_color_background {
+  background-color: $pink;
+}
+.glight_pink_color_background {
+  background-color: $light_pink;
+}
+.lighter_pink_color_background {
+  background-color: $lighter_pink;
+}
+.white_color_background {
+  background-color: $white;
+}
+.grey_color_background {
+  background-color: $grey;
+}
+.black_color_background {
+  background-color: $black;
+}
+.bold {
+  font-weight: bold;
+}
