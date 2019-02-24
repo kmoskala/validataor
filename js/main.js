@@ -37,7 +37,7 @@ $(window).resize(function () {
 });
 $(document).ready(function () {
 	init();
-	
+	$('#validateForm').validateForm();
 	$('#main_banner .icon_container').click(function () {
 		$('html, body').animate({
 			scrollTop: $("#main_gallery").offset().top
@@ -126,7 +126,7 @@ $(document).ready(function () {
 			}
 			winer(game);
 		}
-		$('')
+		
 	});
 	var winInterval = setInterval(function () {
 		$('#point_table .first_player .point').text(game.win1);

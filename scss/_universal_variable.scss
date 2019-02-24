@@ -4,6 +4,8 @@ $browser-context: 16; // Default
   @return #{$pixels/$context}em;
 }
 
+$green: #2EF285;
+$red: #EB0801;
 $main_color : #eb0165;
 $pink: #f4517c;
 $light_pink: #fb7995;
@@ -11,6 +13,7 @@ $lighter_pink: #ff9dae;
 $white: #fff;
 $grey: #767676;
 $black: #000;
+
 
 $h1_size: em(200);
 $h2_size: em(80);

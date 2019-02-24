@@ -10,7 +10,7 @@ sass.compiler = require('node-sass');
 // task uglify js
 gulp.task('js', function () {
  return gulp.src('js/*.js') // path to your files
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(gulp.dest('js.min'));
 });
 // task sass to css

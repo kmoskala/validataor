@@ -3,8 +3,34 @@
 #main_banner {
   margin: auto;
   position: relative;
+}
+form {
+  text-align: center;
+}
+.inputContainer {
+  color: $pink;
+  font-size: em(50);
+  margin: 15px auto;
 
+  label {
+    font-size: em(24);
+  }
+  &:focus {
+    outline: $light_pink;
+  }
 
+}
+.button {
+  font-size: em(30);
+  background-color: $main_color;
+  padding: 15px 30px;
+  color: $white;
+  cursor: pointer;
+  max-width: 80%;
+
+  &:hover {
+    background-color: $light_pink;
+  }
 }
 .headers_container{
   margin: auto;
@@ -60,6 +86,8 @@
 
 #main_gallery {
   padding: 50px 0;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 .squer_container {
   display: flex;
