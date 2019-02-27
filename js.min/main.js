@@ -1,15 +1,15 @@
 function init() {
 	var screen_height     = $(window).height(),
 	    screen_width      = $(window).width(),
-	    headers_height    = $('.headers_container').height();
+	    phone_screen_size = (($(window).width() - 100) / 3) - 12;
 	
-	if(!isMobile()){
+
+	if(!isMobile()) {
 		$('#main_banner, #footer').height(screen_height);
 		$('.headers_container').css('padding', (screen_height - headers_height) / 2 + 'px 0');
 	} else {
 		$('#main_banner, #footer').css('height', 'inherit');
 		$('.headers_container').css('padding', '150px 0');
-		
 	}
 	
 }
@@ -38,5 +38,8 @@ $(document).ready(function () {
 			scrollTop: $("#main_gallery").offset().top
 		}, 1500);
 	});
+	
+	
+	
 });
 

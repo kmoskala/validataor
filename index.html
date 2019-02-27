@@ -24,7 +24,62 @@
 		<div class=headers_container><h1 class="center main_color_text bold">Formularz Walidacji</h1></div>
 		<div class=icon_container><i class="fas fa-angle-down"></i></div>
 	</div>
+	<div id="instruction" class="row">
+		<di class="instruction_text center">
+			<p>
+				validataor<br>
+				Struktura plikow<br>
+				
+				<strong>plik html<br></strong>
+				&lt;form id="myForm"&gt;<br>
+				&lt;div class="inputContainer"&gt;
+				&lt;input class="input"&gt;<br>
+				
+				&lt;/div&gt;<br>
+				&lt;/form&gt;
+				<br>
+				<strong>main.js<br></strong>
+				$(document).ready(function () {<br>
+				$('#myForm').validateForm();<br>
+				}<br>
+				<br>
+				Walidator wymaga podpiecia jquery.<br>
+				<br>
+				1. Opcje domyślne to:<br>
+				<ul>
+			<li>				- minLength  : 1,			</li>
+			<li>				- maxLenght  : 9,			</li>
+			<li>- phoneRegex : /[0-9]{3}-[0-9]{3}-[0-9]{3}/,</li>
+			<li>				- emailRegex : /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,3})+$/,
+			</li>
+			
+		
+			<li>- message    : ''</li>
+			<li>- messageMinLeght : 'Text jest za krótki!',</li>
+			<li>- messageMaxLenght : 'Text jest za długi!',</li>
+			<li>- messageRequire : 'To pole jest wymagane.',</li>
+			<li>- messageIsPhone : 'To musi być nr telefonu w formacie: 444-444-444.',</li>
+			<li>- 	messageIsEmail  : 'To musi być e-mail w formacie: jakismail@cos.pl.'</li>
+		</ul>
+				<br>
+				Mozna je edtowac w pliku main.js ,<br>
+				$('#myForm').validateForm({<br>
+				minLenght: 3<br>
+				});<br>
+				lub za pomocą pol data w pliku html w polu o klasie "input".<br>
+				Dostepne data-tagi:<br>
+				<strong>liczbowe:<br></strong>
+				data-minlenght,<br>
+				data-maxlenght,<br>
+				<strong>boolowskie:<br></strong>
+				data-require,<br>
+				data-isphone,<br>
+				data-isemail<br>
+			</p>
+		</div>
+	</div>
 	<div id=main_gallery class=row>
+		
 		<form id="validateForm" class="col-sm-12">
 			<div class="inputContainer col-sm-12">
 				<label for="name">Imie</label><br>

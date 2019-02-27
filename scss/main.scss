@@ -4,6 +4,23 @@
   margin: auto;
   position: relative;
 }
+#instruction {
+  margin: auto;
+  position: relative;
+  justify-content: center;
+  font-size: em(25);
+  .instruction_text{
+    font-size: em(30);
+    @media only screen and (max-width: $sm) {
+      font-size: em(20);
+      padding: 15px;
+    }
+    }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
 form {
   text-align: center;
 }
@@ -15,6 +32,9 @@ form {
   .input {
     width: 50%;
     border: 1px solid $grey;
+    @media only screen and (max-width: $sm) {
+      width: 90%;
+    }
   }
   label {
     font-size: em(24);

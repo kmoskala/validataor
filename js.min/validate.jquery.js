@@ -154,7 +154,6 @@
 			
 			$submit.bind('click', function (e) {
 				e.preventDefault();
-				console.log("klikam sb");
 				check($input);
 			});
 		});
