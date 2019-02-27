@@ -1,7 +1,7 @@
 function init() {
 	var screen_height     = $(window).height(),
 	    screen_width      = $(window).width(),
-	    phone_screen_size = (($(window).width() - 100) / 3) - 12;
+	    headers_height    = $('.headers_container').height();
 	
 
 	if(!isMobile()) {
